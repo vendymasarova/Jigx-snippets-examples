@@ -19,6 +19,7 @@ datasources
           (
           SELECT COUNT(*)
           FROM [default/steps] s
+          WHERE json_extract(s.data, '$.strategy_id') = json_extract(a.data, '$.strategy_id')
           ) AS total_steps,
         FROM [default/strategies] a
         LEFT JOIN [default/steps] b ON json_extract(a.data, '$.strategy_id') = json_extract(b.data, '$.strategy_id')
