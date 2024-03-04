@@ -1,0 +1,7 @@
+# Assets are cached on solution load and will be available offline.
+# This file is auto populated with header images we detect in the solution.
+# You can manually add additional image URLs.
+# An array list of image URLs is expected.
+
+images:
+  - https://builder.jigx.com/assets/images/header-cal.png # auto-generated
