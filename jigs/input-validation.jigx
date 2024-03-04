@@ -5,7 +5,7 @@ type: jig.default
 
 children:
   - type: component.form
-    instanceId: test
+    instanceId: input-validation
     options:
       children:
         - type: component.text-field
